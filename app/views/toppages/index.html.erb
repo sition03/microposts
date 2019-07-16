@@ -7,11 +7,15 @@
       </div>
       <%= f.submit "Post", class: "btn btn-primary btn-block" %>
       <% end %>
+
   </aside>
   <div class="col-sm-8">
-    <%= render "microposts/microposts", microposts: @microposts %>
+    <%= render "microposts/microposts",microposts: @microposts %>
+     
   </div>
+ 
 </div>
+
   <% else %>
 <div class="center jumbotron">
   <div class="text-center">

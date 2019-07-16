@@ -1,4 +1,4 @@
-<div class="row">
+ <div class="row">
     <aside class="col-sm-4">
         <div class="card">
             <div class="card-header">
@@ -20,7 +20,7 @@
             <li class="nav-item"><a href="<%= likes_user_path(@user) %>" class="nav-link <%= "active" if current_page?(likes_user_path(@user)) %>">Favorite<span class="badge badge-secoundary"><%= @count_favoritings %></span></a></li>
 
         </ul>
-        <%= render "microposts/microposts", microposts: @microposts %>
+        <%= render "microposts/microposts", microposts: @favoritings %>
       
     </div>
 </div>

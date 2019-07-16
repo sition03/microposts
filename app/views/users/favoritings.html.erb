@@ -10,6 +10,7 @@
       </div>
       </div>
       <%= render "relationships/follow_button", user: @user %>
+      
     </aside>
     <div class="col-sm-8">
       <ul class="nav nav-tabs nav-justified mb-3">
@@ -19,6 +20,6 @@
         <li class="nav-item"><a href="<%= likes_user_path(@user) %>" class="nav-link <%= "active" if current_page?(likes_user_path(@user)) %>">Favorite<span class="badge badge-secoundary"><%= @count_favoritings %></span></a></li>
 
       </ul>
-      <%= render 'users', users: @followings %>
+  　  <%= render "microposts/microposts", microposts: @favoritings %>
     </div>
 </div>
